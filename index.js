@@ -43,6 +43,7 @@ app.get("/redirect",(req,res)=>{
 //render res method
 //view a folder bana k andr file bnao
 //
+app.set("view engine","ejs")
 
 app.get("/ejs",(req,res)=>{
     res.render("about")
@@ -51,7 +52,7 @@ app.get("/ejs",(req,res)=>{
 //5. download
 
 app.get("/download",(req,res)=>{
-    res.download("lec-3-methods/file/React Props.docx")  //2 parameter
+    res.download("")  //2 parameter
 })
 
 //1p- => folder and file name
